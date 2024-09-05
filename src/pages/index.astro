@@ -30,23 +30,44 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, je m'appelle Guillaume Segond"
-					tagline="Développeur Back-End passionné, résolument créatif."
+					title ="Guillaume Segond"
+					tagline="Développeur FullStack Java Jee /Angular."
 					align="start"
 				>
-					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="rocket-launch" size="1.33em" /> Créatif </Pill>
+					<div  class="roles">
+						<Pill><Icon icon="code" size="1.33em" /> Spring </Pill>
+						<Pill><Icon icon="code" size="1.33em" /> Spring Boot</Pill>
+						<Pill><Icon icon="code" size="1.33em" /> Angular</Pill>
+						<Pill><Icon icon="code" size="1.33em" /> Maven </Pill> 
 					</div>
+					<div class = "roles">
+						<Pill><Icon icon="code" size="1.33em" /> JPA </Pill>
+						<Pill><Icon icon="code" size="1.33em" /> MySQL </Pill>
+						<Pill><Icon icon="code" size="1.33em" /> PHP </Pill>
+						<Pill><Icon icon="code" size="1.33em" /> Symfony</Pill>
+					</div>
+					<div class = "roles">
+						<Pill><Icon icon="code" size="1.33em" /> Junit </Pill>
+						<Pill><Icon icon="code" size="1.33em" /> PostMan </Pill>
+						<Pill><Icon icon="code" size="1.33em" /> ApiRestful </Pill>
+					</div>
+					
 				</Hero>
 
 				<img
 					alt="Guillaume Segond"
-					width="480"
-					height="620"
+					width="300"
+					height="360"
 					src="/assets/portrait-rogne.png"
 				/>
 			</header>
+			<div class="stack gap-20 lg:gap-48 wrapper stack gap-8 lg:gap-20">
+				<p style="font-size: 20px;">C'est en débutant dans le montage d'expositions dans les musées que j'ai découvert ma passion pour le
+					développement. Confronté aux besoins des clients (sites MVC, applications, programme informatiques), j'ai choisi
+					de me réorienter. Depuis quatre ans, je me forme en autodidacte avec une pratique quotidienne. Je maîtrise la
+					création d'API RESTFul et les sites MVC. Rigoureux et adaptable, j’aime penser le developpement comme un
+					artisanat numérique. </p>
+			</div>
 
 			<Skills />
 		</div>
@@ -227,3 +248,9 @@ const projects = (await getCollection('work'))
 		}
 	}
 </style>
+<script>
+	if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+	  document.documentElement.classList.add('theme-dark');
+	}
+  </script>
+  

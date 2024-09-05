@@ -12,8 +12,8 @@ const textLinks: { label: string; href: string }[] = [
 
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[] = [
-	{ label: 'GitHub', href: 'https://github.com/Millecactus', icon: 'github-logo' },
-	{ label: 'CodeWars', href: 'https://www.codewars.com/users/guillaumeCodecraft', icon: 'codepen-logo' },
+	// { label: 'GitHub', href: 'https://github.com/Millecactus', icon: 'github-logo' },
+	// { label: 'CodeWars', href: 'https://www.codewars.com/users/guillaumeCodecraft', icon: 'codepen-logo' },
 ];
 ---
 
@@ -212,6 +212,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 	}
 
 	.nav-items {
+		position:fixed;
 		margin: 0;
 		display: flex;
 		flex-direction: column;
